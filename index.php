@@ -74,25 +74,54 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 ?>
 
-<!-- HTML Form -->
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Form</title>
+    <title>Clearing In Out</title>
 </head>
 <body>
-    <form method="post">
-        <!-- Your HTML form elements here -->
-        <!-- For example:
-        <input type="text" name="txtForceNum" placeholder="Force Number">
-        <input type="text" name="txtName" placeholder="Name">
-        <select name="cmbRank">
-            <option value="Rank1">Rank1</option>
-            <option value="Rank2">Rank2</option>
+    <h1 style="text-align: center;">HQ 46 SA BRIGADE</h1>
+    <h2 style="text-align: center;">Clearing In | Out Form</h2>
+    <form>
+        <label for="txtForceNum">Force Number:</label>
+        <input type="text" id="txtForceNum" name="txtForceNum"><br>
+
+        <label for="cmbRank">Rank:</label>
+        <select id="cmbRank" name="cmbRank">
+            <option value="Pte">Pte</option>
+            <option value="L/Cpl">L/Cpl</option>
             <!-- Add other rank options here -->
-        </select>
-        <!-- Add other form elements here -->
-        <input type="submit" name="btnSubmit" value="Submit">
+        </select><br>
+
+        <label for="txtName">Full Names:</label>
+        <input type="text" id="txtName" name="txtName"><br>
+
+        <label for="txtHomeUnit">Unit(Home):</label>
+        <input type="text" id="txtHomeUnit" name="txtHomeUnit"><br>
+
+        <label for="txtAuthNum">Authority No:</label>
+        <input type="text" id="txtAuthNum" name="txtAuthNum"><br>
+
+        <label for="cmbClearingInOut">Clearing In/Out:</label>
+        <select id="cmbClearingInOut" name="cmbClearingInOut">
+            <option value="In">In</option>
+            <option value="Out">Out</option>
+        </select><br>
+
+        <label for="dtpReturnDate">Date(Return):</label>
+        <input type="date" id="dtpReturnDate" name="dtpReturnDate"><br>
+
+        <label for="txtUnitVisiting">Unit(Visiting):</label>
+        <input type="text" id="txtUnitVisiting" name="txtUnitVisiting"><br>
+
+        <label>Clearing Sections (Check/Uncheck the relevant ones):</label><br>
+        <input type="checkbox" name="clearingSection" value="RSM">RSM
+        <input type="checkbox" name="clearingSection" value="Adjudant">Adjudant
+        <!-- Add other clearing section checkboxes here -->
+
+        <br>
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
+

@@ -78,6 +78,26 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <html>
 <head>
     <title>Clearing In Out</title>
+    <style>
+        body {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 14px;
+                }
+        
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+        
+                th, td {
+                    text-align: left;
+                    padding: 8px;
+                }
+        
+                tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+    </style>
 </head>
 <body>
     <h1 style="text-align: center;">HQ 46 SA BRIGADE</h1>

@@ -82,6 +82,34 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         body {
                     font-family: Arial, Helvetica, sans-serif;
                     font-size: 14px;
+                    background-color: white;
+
+                }
+                div{
+                    position: absolute;
+                    width: 600px !important;
+                    height: 600px;
+
+                    top: 50%;
+                    left: 50%;
+                    margin-top: -250px;
+                    margin-left: -300px;
+
+
+
+
+                }
+                form{
+                    background-color: #282728;
+                    width: 600px;
+                    height: 600px;
+                    border-radius: 10px;
+
+                    margin:0;
+                    padding: 0px;
+                
+     
+                
                 }
         
                 table {
@@ -102,6 +130,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body>
     <h1 style="text-align: center;">HQ 46 SA BRIGADE</h1>
     <h2 style="text-align: center;">Clearing In | Out Form</h2>
+    <div>
     <form>
         <label for="txtForceNum">Force Number:</label>
         <input type="text" id="txtForceNum" name="txtForceNum"><br>
@@ -142,6 +171,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <br>
         <input type="submit" value="Submit">
     </form>
+    </div>
 </body>
 </html>
 

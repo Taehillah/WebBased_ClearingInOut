@@ -139,6 +139,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <select id="cmbRank" name="cmbRank">
             <option value="Pte">Pte</option>
             <option value="L/Cpl">L/Cpl</option>
+            <option value="Cpl">Sgt</option>
             <!-- Add other rank options here -->
         </select><br>
 

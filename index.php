@@ -5,7 +5,6 @@ $connectionString = "Data Source=clearing-in-outdbserver.database.windows.net;In
 function escapeInput($input)
 {
     // Function to escape user inputs to prevent SQL injection
-    // You can implement this using your preferred database library or PDO
     // For simplicity, we'll use the mysqli library here
     // Please make sure to use prepared statements and bind parameters in production code
     global $connection;

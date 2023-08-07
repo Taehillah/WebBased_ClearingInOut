@@ -138,7 +138,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <option value="Pte">Pte</option>
             <option value="L/Cpl">L/Cpl</option>
             <option value="Cpl">Sgt</option>
-            <!-- Add other rank options here -->
         </select><br>
 
         <label for="txtName">Full Names:</label>
